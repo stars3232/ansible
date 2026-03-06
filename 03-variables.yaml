@@ -3,7 +3,7 @@
   connection: local
   vars:
    COURSE: ansible
-   DURATION: 10hrs
+   DURATION: 10 hrs
    TRAINER: Siva
   tasks:
   - name: Global Variables
