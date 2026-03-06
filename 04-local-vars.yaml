@@ -1,0 +1,19 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:
+   COURSE: ansible
+   DURATION: 10hrs
+   TRAINER: Siva
+  tasks:
+  - name: Local Variables
+    vars:
+     COURSE: python
+     DURATION: 20hrs
+     TRAINER: maxi
+    ansible.builtin.debug:
+     msg: "This is {{ COURSE }} session length is {{ DURATION }} & trainer is {{ TRAINER }}"
+
+  - name: Global Variables
+    ansible.builtin.debug:
+     msg: "This is {{ COURSE }} session length is {{ DURATION }} & trainer is {{ TRAINER }}"

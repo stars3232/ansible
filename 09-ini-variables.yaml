@@ -1,0 +1,6 @@
+- name: Inventory variables type-2
+  hosts: frontend
+  tasks:
+  - name: print courses info
+    ansible.builtin.debug:
+     msg: "This is {{ COURSE }} coaching by {{ TRAINER }} in {{ DURATION }}"

@@ -1,0 +1,13 @@
+- name: Global variables
+  hosts: local
+  connection: local
+  vars:
+   COURSE: ansible
+   DURATION: 10hrs
+   TRAINER: Siva
+  tasks:
+  - name: Global Variables
+    ansible.builtin.debug:
+     msg: "This is {{ COURSE }} session length is {{ DURATION }} & trainer is {{ TRAINER }}"
+
+    
