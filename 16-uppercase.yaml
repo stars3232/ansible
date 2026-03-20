@@ -1,0 +1,11 @@
+- name: Converting to uppercase
+  hosts: localhost
+  connection: local
+
+  vars:
+   NAME: siva sravan
+
+  tasks:
+   - name: covert lowercase to upper
+     ansible.builtin.debug:
+      msg: "{{ NAME | upper }}"

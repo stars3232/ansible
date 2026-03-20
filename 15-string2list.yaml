@@ -1,0 +1,20 @@
+- name: Transforming a String into a List
+  hosts: localhost
+  connection: local
+
+  vars:
+   NAMES: 'SURESH,MAHESH,RAMESH,SRINU'
+
+  tasks:
+   - name: covert string into list
+     ansible.builtin.debug:
+      msg: "List of names are {{ NAMES | split(',') }}"
+
+
+
+
+
+    
+     
+
+  

@@ -1,0 +1,9 @@
+- name: Ansible default function demo
+  hosts: localhost
+  connection: local
+  vars:
+   NAME: 
+  tasks:
+   - name: print default name
+     ansible.builtin.debug:
+      msg: "Hello {{ NAME | default('AKASH') }}"
