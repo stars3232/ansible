@@ -1,10 +1,12 @@
-- name: variables demo
+- name: variables example
   hosts: local
   connection: local
   vars:
-   COURSE: "DEVOPS"
-   TRAINER: "SIVA"
+   COURSE: Ansible
+   DURATION: 10 HRS
+   TRAINER: Siva
   tasks:
-   - name: variables demo
-     ansible.builtin.debug:
-      msg: "I am {{ TRAINER }}. You are learning {{ COURSE }}."
+   - name: Global variables
+     ansible.builtin.debug.
+      msg: "U are learning {{ COURSE }}, duration is {{ DURATION }}. Trainer is {{ TRAINER }}"
+     
