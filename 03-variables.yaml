@@ -7,6 +7,6 @@
    TRAINER: Siva
   tasks:
    - name: Global variables
-     ansible.builtin.debug.
+     ansible.builtin.debug:
       msg: "U are learning {{ COURSE }}, duration is {{ DURATION }}. Trainer is {{ TRAINER }}"
      
