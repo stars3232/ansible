@@ -1,4 +1,4 @@
-- name: Inventory variables type-2
+- name: Inventory variables
   hosts: frontend
   tasks:
   - name: print courses info
